@@ -4,6 +4,9 @@
     "paths": {
       "*": [
         "types/*"
+      ],
+      "$ROOT/*": [
+        "src/*"
       ]
     },
     "jsx": "react",

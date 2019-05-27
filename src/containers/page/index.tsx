@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import * as React from 'react';
 import { hot } from 'react-hot-loader/root';
 import Blank from '$ROOT/components/blank/';
 
 const { Loading } = Blank;
-const useGithub = userName => {
+const { useState, useEffect } = React;
+const useGithub = (userName: string) => {
   const [user, setUser] = useState();
-  
+
   useEffect(() => {
     fetch(`https://api.github.com/users/${userName}`)
       .then(r => r.json())

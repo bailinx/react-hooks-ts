@@ -1,8 +1,8 @@
 import { useContext } from 'react';
-import Context from './Context';
+import Context from './context';
 
 const store = () => {
-  const { store, dispatch } = useContext(Context);
+  const { store, dispatch }: { [key: string]: any } = useContext(Context);
   return {
     getState: store,
     dispatch

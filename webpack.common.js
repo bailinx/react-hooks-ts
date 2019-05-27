@@ -7,7 +7,7 @@ const { env } = process;
 
 const options = {
   mode: env.NODE_ENV,
-  entry: './src/index.js',
+  entry: './src/index.tsx',
   output: {
     filename: '[name].js'
   },
